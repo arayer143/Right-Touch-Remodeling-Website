@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  right: 45px;
   bottom: 15px;
   z-index: 996;
   background: #ff4a17;
@@ -249,33 +249,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 .back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.back-to-top-call {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 75px;
-  bottom: 15px;
-  z-index: 996;
-  background: #15222b;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-.back-to-top-call i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-.back-to-top-call:hover {
-  background: #ff6a40;
-  color: #fff;
-}
-.back-to-top-call.active {
   visibility: visible;
   opacity: 1;
 }
@@ -548,7 +521,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    display: block;
+    display: flex;
   }
   .navbar ul {
     display: none;
@@ -556,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile {
   position: fixed;
-  overflow: hidden;
+  overflow-x: hidden;
   top: 0;
   right: 0;
   left: 0;
@@ -1642,7 +1615,6 @@ section {
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
-  margin-left: 3rem;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
