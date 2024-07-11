@@ -10,40 +10,45 @@ section {
   background-color: lighten($secondary, 83);
 }
 
+
 .section-title {
-  padding-bottom: 40px;
+  text-align: center;
+  padding-bottom: 10px;
 
-  h2 {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 0;
-    line-height: 1px;
-    margin: 0 0 5px 0;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: lighten($secondary, 40);
-    font-family: $font-secondary;
-  }
-
-  h2::after {
-    content: "";
-    width: 120px;
-    height: 1px;
-    display: inline-block;
-    background: lighten($primary, 15);
-    margin: 4px 10px;
-  }
-  
-  p {
-    margin: 0;
-    margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: $font-secondary;
-    color: lighten($secondary, 10);
-  }
-
+ 
+}
+.section-title h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  position: relative;
+  color: rgb(56, 56, 56);
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $secondary;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+.section-title p{
+  font-size: 18px;
+  font-weight: 200;
 }
 
 /*--------------------------------------------------------------
@@ -659,7 +664,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
 
-  padding-top: 40px;
+  padding-top: 240px;
 
   .portfolio-details-slider {
     img {
@@ -932,7 +937,7 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
+  padding: 90px 0;
   background: lighten($secondary, 83);
   min-height: 40px;
   margin-top: 78px;

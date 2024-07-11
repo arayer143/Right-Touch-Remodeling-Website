@@ -99,7 +99,7 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  let backtotop = select('.back-to-top, .back-to-top-call')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -160,16 +160,7 @@
     }
   });
 
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
-
+ 
   /**
    * Initiate glightbox 
    */
@@ -268,9 +259,5 @@
     });
   });
 
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
+  
 })()

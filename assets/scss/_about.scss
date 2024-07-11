@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+
+    p{
+        margin-top: 3rem;
+        max-width: 700px;
+    }
+
+    .icon-boxes {
+  
+      h4 {
+        font-size: 18px;
+        color: lighten($secondary, 20);
+        margin-bottom: 15px;
+      }
+  
+      h3 {
+        font-size: 28px;
+        font-weight: 700;
+        color: lighten($secondary, 5);
+        margin-bottom: 15px;
+        margin-top: 3rem;
+      }
+  
+      h5{
+        margin-top: 2rem;
+        margin-bottom: -1.5rem;
+        color: $secondary;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    
+  
+    .icon-box {
+      margin-top: 40px;
+  
+      .icon {
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border: 2px solid lighten($primary, 30);
+        border-radius: 50px;
+        transition: 0.5s;
+        background: $white;
+    
+        i {
+          color: $primary;
+          font-size: 32px;
+        }
+    
+      }
+    
+      &:hover .icon {
+        background: $primary;
+        border-color: $primary;
+        i {
+          color: $white;
+        }
+    
+      }
+    
+      .title {
+        margin-left: 85px;
+        font-weight: 700;
+        margin-top: 1rem;
+        font-size: 18px;
+        a {
+          color: $black;
+          transition: 0.3s;
+          &:hover {
+            color: $primary;
+          }
+        }
+    
+      }
+    
+      .description {
+        margin-left: 85px;
+        line-height: 24px;
+        font-size: 14px;
+      }
+    }
+  
+   
+  }
+  
+  
+  
